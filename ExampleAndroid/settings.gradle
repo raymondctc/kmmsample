@@ -3,8 +3,13 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
     }
 }
 rootProject.name = "ExampleApp"
 include ':app'
+
+include ":x_kmm_module_core"
+project(":x_kmm_module_core").projectDir = new File(settingsDir, "../sharedmodule/x_kmm_module_core")
+
+include ":x_kmm_module_a"
+project(":x_kmm_module_a").projectDir = new File(settingsDir, "../sharedmodule/x_kmm_module_a")

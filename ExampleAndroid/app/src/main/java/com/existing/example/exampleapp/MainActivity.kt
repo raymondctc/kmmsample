@@ -1,6 +1,7 @@
 package com.existing.example.exampleapp
 
 import android.os.Bundle
+import android.util.Log
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -10,6 +11,8 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import com.existing.example.exampleapp.databinding.ActivityMainBinding
+import com.kmm.core.PlatformUtil
+import com.kmm.moduleA.ModuleA
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +21,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        val moduleA = ModuleA(PlatformUtil());
+        Log.d("MainAct", moduleA.getPlatform())
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
