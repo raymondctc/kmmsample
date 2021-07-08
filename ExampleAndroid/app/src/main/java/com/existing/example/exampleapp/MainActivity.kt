@@ -12,7 +12,7 @@ import android.view.Menu
 import android.view.MenuItem
 import com.existing.example.exampleapp.databinding.ActivityMainBinding
 import com.kmm.core.PlatformUtil
-import com.kmm.moduleA.ModuleA
+import com.kmm.moduleA.CommonModuleA
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val moduleA = ModuleA(PlatformUtil());
+        val moduleA = CommonModuleA(PlatformUtil())
         Log.d("MainAct", moduleA.getPlatform())
 
         binding = ActivityMainBinding.inflate(layoutInflater)

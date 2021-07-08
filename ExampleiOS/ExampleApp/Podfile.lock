@@ -1,0 +1,21 @@
+PODS:
+  - x_kmm_module_a (1.0)
+  - x_kmm_module_core (1.0)
+
+DEPENDENCIES:
+  - x_kmm_module_a (from `../../sharedmodule/x_kmm_module_a`)
+  - x_kmm_module_core (from `../../sharedmodule/x_kmm_module_core`)
+
+EXTERNAL SOURCES:
+  x_kmm_module_a:
+    :path: "../../sharedmodule/x_kmm_module_a"
+  x_kmm_module_core:
+    :path: "../../sharedmodule/x_kmm_module_core"
+
+SPEC CHECKSUMS:
+  x_kmm_module_a: 69bc4a272812bb6684dfa70413e5847c2f7369e8
+  x_kmm_module_core: 3f469e02b1a36d0e60a40820c90d76d765744628
+
+PODFILE CHECKSUM: 363b99caac97020da821d97c8f1320b2fdf8222a
+
+COCOAPODS: 1.10.1
